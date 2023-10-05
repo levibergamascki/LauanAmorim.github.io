@@ -110,6 +110,7 @@ section#home{
         display: flex;
   justify-content: center;
   text-shadow: 0 0 1.5em  var(--red), 0 0 0 currentColor;
+  text-align: center;
   
     }
 
@@ -142,11 +143,43 @@ section#home{
         box-shadow: 0 0 1.5em  var(--purple), 0 0 0 currentColor;
     }
 
+
+    @media (max-width: 680px){
+#pages{
+  display: none;
+}
+.maincontent #maintext h1{
+font-size: 1.8em;
+}
+.maincontent #subtext h2{
+  font-size: 1em;
+
+}
+      #about-art{
+        display: none;
+      }
+    #services-text{
+      display: none;
+    }
+    #about-title{
+      display: flex;
+      position: relative;
+      justify-content: center;
+      text-align: center;
+    }
+    .about-text{
+      font-size: 1.2rem;
+      text-align: center;
+    
+    }
+    
+    
+    
+    }
     
 
    section#about{
     position: relative;
-    top: 20%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -154,16 +187,13 @@ section#home{
 
     #about-art{
         position: relative;
-        left: -10%;
+        left: -3rem;
         float: left;
         width: 461px;
         height: 370px;
     }
 
     #about-father{
-        position: relative;
-        right: inherit;
-        top: 30%;
         display: flex;
         justify-content: center;
         color: #606060;
@@ -172,21 +202,21 @@ section#home{
         font-weight: 100;
         flex-direction: column;
         text-align: center;
-        margin-left: 40%;
     }
-    #about-tittle {
+    #about-title {
         text-align: left;
         color: var(--orange);
-        margin-bottom: 40px;
-        width: 126px;
-        height: 54px;
-        flex-shrink: 0;
+        margin-bottom: 2rem;
         color: #EE5337;
         font-family: Poppins;
-        font-size: 32px;
+        font-size: 1em;
         font-style: normal;
         font-weight: 600;
         line-height: normal;
+    }
+    .about-text{
+      width: 25em;
+      text-align: center;
     }
     .btn-more{
         cursor: pointer;
@@ -203,7 +233,7 @@ section#home{
     }
     .about-text{
         text-align: left;
-        margin-bottom: 40px;
+     
     }
     section#services{
         background: #0B001D;
