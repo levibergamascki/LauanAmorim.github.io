@@ -9,6 +9,8 @@
     nossa missão, nossa visão, nossos valores, nossos rostos e nossa localização. Energizando seus sonhos em realidade">
     <title>DevPolarys | Energizando seus sonhos em realidade</title>
     <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" href="glide.core.min.css">
+    <link rel="stylesheet" href="glide.theme.min.css">
     <script src="../script/slide.js"></script>
     <link
   rel="stylesheet"
@@ -91,7 +93,106 @@
     <div id="services-text">
        <img src="img/maintext-service.svg" alt="Descubra o futuro da tecnologia aqui">
     </div>
-    
+    <div class="glide">
+        <div class="glide__track" data-glide-el="track">
+          <ul class="glide__slides">
+            <li class="glide__slide">
+            <div class="box">
+                <div class="img-area">
+                    <img src="./img/logojava.svg" alt="Lucas Rabaquim">
+                </div>
+                    <div class="text-area">
+                <h2>JAVA</h2>
+                <h3>Desenvolvimento de aplicações para Android</h3>
+            </div>
+            
+            </div>
+        </li>
+            <li class="glide__slide">
+                <div class="box--2">
+                    <div class="img-area">
+                        <img src="./img/logojava.svg" alt="Lucas Rabaquim">
+                    </div>
+                        <div class="text-area">
+                    <h2>C#</h2>
+                    <h3>Desenolvimento do back-end</h3>
+                </div>
+                    
+                
+                </div>
+            </li>
+            <li class="glide__slide">
+                <div class="box">
+                    <div class="img-area">
+                        <img src="./img/logojava.svg" alt="Lucas Rabaquim">
+                    </div>
+                    <div class="text-area">
+                    <h2>REACT</h2>
+                    <h3>Desenvolvimento de páginas web</h3>
+                </div>
+                    
+                  
+                </div>
+            </li>
+            <li class="glide__slide">
+                <div class="box--2">
+                    <div class="img-area">
+                        <img src="./img/logojava.svg" alt="Lucas Rabaquim">
+                    </div>
+                    <div class="text-area">
+                    <h2>ASP.NET</h2>
+                    <h3>Desenvolvimento web com MVC e .NET Framkework</h3>
+                </div>
+                   
+            </li>
+            <li class="glide__slide">
+                <div class="box">
+                    <div class="img-area">
+                        <img src="./img/logojava.svg" alt="Lucas Rabaquim">
+                    </div>
+                    <div class="text-area">
+                    <h2>JAVASCRIPT</h2>
+                    <h3>Desenvolvimento Full-Stack</h3>
+                </div>
+                 
+            </li>        <li class="glide__slide">
+                <div class="box--2">
+                    <div class="img-area">
+                        <img src="./img/logojava.svg" alt="Lucas Rabaquim">
+                    </div>
+                        <div class="text-area">
+                    <h2>NODE</h2>
+                    <h3>Desenvolvimento Back-End</h3>
+                </div>
+                 
+            </li>
+          </ul>
+        </div>
+        <div data-glide-el="controls">
+            <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><i class="fa fa-arrow-left"></i></button>
+            <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><i class="fa fa-arrow-right"></i></button>
+          </div>
+      </div>
+      <script src="glide.min.js"></script>
+      <script>
+        new Glide(".glide", {
+            type: 'slider',
+            perView: 3,
+            startAt: 0,
+            animationDuration: 500,
+            gap: 40,
+            bound: true,
+            breakpoints: {
+                1200:{
+                    perView: 3
+                },
+                800:{
+                    perView: 1
+                }
+            }
+
+        }).mount();
+      </script>
     <!-- <div id="languages">
         <script>showSlides()</script>
         <div class="slideshow-container">

@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
 :root {
     --blue: #1363DF;
@@ -30,6 +31,10 @@ section#home{
     background-image: url(../img/template_circle.svg);
     background-repeat: no-repeat;
     background-size: cover;
+}
+section#services{
+  width:100%;
+	height:1200px;  
 }
 
 #mainmenu{
@@ -144,39 +149,7 @@ section#home{
     }
 
 
-    @media (max-width: 680px){
-#pages{
-  display: none;
-}
-.maincontent #maintext h1{
-font-size: 1.8em;
-}
-.maincontent #subtext h2{
-  font-size: 1em;
-
-}
-      #about-art{
-        display: none;
-      }
-    #services-text{
-      display: none;
-    }
-    #about-title{
-      display: flex;
-      position: relative;
-      justify-content: center;
-      text-align: center;
-    }
-    .about-text{
-      font-size: 1.2rem;
-      text-align: center;
-    
-    }
-    
-    
-    
-    }
-    
+   
 
    section#about{
     position: relative;
@@ -247,7 +220,31 @@ font-size: 1.8em;
       text-align: center;
       padding: 6.6rem;
     }
-
+    .glide{
+      padding-bottom: 100px;
+    }
+    .box{
+      border: 4px solid #fff;
+      border-radius: 30px;
+      height: 30vh;
+    }
+    .box--2{
+      border: 4px solid var(--red);
+      border-radius: 30px;
+      height: 30vh;
+      box-shadow: 0 0 0.3em  var(--red), 0 0 0 currentColor;
+     
+    }
+    .img-area{
+      display: flex;
+      justify-content: center;
+    }
+    .text-area{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+    }
 
 
       .faq-content {
@@ -400,10 +397,6 @@ font-size: 1.8em;
          margin: 15px;
       }
    
-      .wrapper{
-       
-
-      }
       
       .wrapper a{
         display: block;
@@ -526,3 +519,41 @@ font-size: 1.8em;
     flex-direction: row;
 }
 
+@media (max-width: 680px){
+  #pages{
+    display: none;
+  }
+  .maincontent #maintext h1{
+  font-size: 1.8em;
+  }
+  .maincontent #subtext h2{
+    font-size: 1em;
+  
+  }
+        #about-art{
+          display: none;
+        }
+      #services-text{
+        display: none;
+      }
+      #about-title{
+        display: flex;
+        position: relative;
+        justify-content: center;
+        text-align: center;
+      }
+      .about-text{
+        font-size: 1.2rem;
+        text-align: center;
+  
+        .faq-content{
+          display: none;
+          flex-direction: column;
+        }
+      
+      }
+      
+      
+      
+      }
+      
