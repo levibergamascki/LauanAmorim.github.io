@@ -214,12 +214,14 @@ section#services{
     }
     section#services{
         background: #0B001D;
-    }
+        min-height: 140vh;
+        height: 100%;
+      }
 
     section#contacts{
         background: #E9E9E9;
     }
-
+  
     .main-services #services-text{
       text-align: center;
       padding: 6.5rem;
@@ -254,8 +256,14 @@ section#services{
       width: 50vh;
     }
     .img-face{
+     
       display: flex;
       justify-content: center;
+    }
+    .face{
+      width: 150px;
+      border-radius: 100%;
+      border: 0.15rem solid black;
     }
     .img-area{
       display: flex;
@@ -358,9 +366,11 @@ section#services{
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
-        padding: 0em 0em 10em 5em;
+       
       }
+
       #glide-contact{
+        padding: 0em 0em 10em 5em;
         padding-top: 10vh;
         display: flex;
         flex-direction: row;
@@ -392,9 +402,9 @@ section#services{
     
       }
       .forms-location{
-      
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
       }
       
       #leftcontact{
@@ -402,7 +412,7 @@ section#services{
         flex-direction: column;
         align-items: center;
         float: left;
-      
+        padding: 0em 5em 0em 0em;
     
       }
       #main-text-contact{
@@ -573,7 +583,7 @@ section#services{
 
   
 .list-footer{
-    padding: 0px 1.rem;
+    padding: 0px 1rem;
     display: flex;
     flex-direction: row;
     list-style: none;
