@@ -34,16 +34,16 @@
         </label>
         <ul id="pages">
             <li>
-                <a href="#home">INÍCIO</a>
+                <a href="#home" onclick="unchecked()">INÍCIO</a>
             </li>
             <li>
-                <a href="#about">SOBRE</a>
+                <a href="#about" onclick="unchecked()">SOBRE</a>
             </li>
             <li>
-                <a href="#services">SERVIÇOS</a>
+                <a href="#services" onclick="unchecked()">SERVIÇOS</a>
             </li>
             <li>
-                <a href="#contact">CONTATO</a>
+                <a href="#contact" onclick="unchecked()">CONTATO</a>
             </li>
         </ul>
     </nav>
@@ -58,10 +58,15 @@
         element.classList.add("hide");
         document.body.style.overflow="auto";
     }
+     
+    
 }
-
-var checkbox = document.getElementById("menu-hamburguer");
-checkbox.addEventListener("change", ocultarOuMostrar);
+function unchecked() {
+  const checkbox = document.getElementById('menu-hamburguer');
+  if (checkbox.checked) {
+    checkbox.checked = false;
+  }
+}
     </script>
     <div class="maincontent">
         <div id="maintext">
@@ -268,10 +273,10 @@ checkbox.addEventListener("change", ocultarOuMostrar);
                         <a href="https://www.instagram.com/levibergamascki/" target="_blank"><img src="./img/instagram-grey.svg" alt="Instagram"></a>
                     </li>
                     <li id="linkedin-media">
-                        <a href="https://www.instagram.com/devpolarys/" target="_blank"><img src="./img/linkedin-grey.svg" alt="Linkedin"></a>
+                        <a href="https://www.linkedin.com/in/levi-bergamascki/" target="_blank"><img src="./img/linkedin-grey.svg" alt="Linkedin"></a>
                     </li>
                     <li id="github-media">
-                        <a href="https://www.instagram.com/devpolarys/" target="_blank"><img src="./img/githublogo.svg" alt="Github"></a>
+                        <a href="https://github.com/levibergamascki" target="_blank"><img src="./img/githublogo.svg" alt="Github"></a>
                     </li>
                 </ul>
             </div>
@@ -292,10 +297,10 @@ checkbox.addEventListener("change", ocultarOuMostrar);
                             <a href="https://www.instagram.com/gustavo_db1/" target="_blank"><img src="./img/instagram-grey.svg" alt="Instagram"></a>
                         </li>
                         <li id="linkedin-media">
-                            <a href="https://www.instagram.com/devpolarys/" target="_blank"><img src="./img/linkedin-grey.svg" alt="Linkedin"></a>
+                            <a href="https://www.linkedin.com/in/luiz-gustavo-3433aa24a/" target="_blank"><img src="./img/linkedin-grey.svg" alt="Linkedin"></a>
                         </li>
                         <li id="github-media">
-                            <a href="https://www.instagram.com/devpolarys/" target="_blank"><img src="./img/githublogo.svg" alt="Github"></a>
+                            <a href="https://github.com/zVeran" target="_blank"><img src="./img/githublogo.svg" alt="Github"></a>
                         </li>
                     </ul>
                 </div>
@@ -317,10 +322,10 @@ checkbox.addEventListener("change", ocultarOuMostrar);
                             <a href="https://www.instagram.com/l4uzin/" target="_blank"><img src="./img/instagram-grey.svg" alt="Instagram"></a>
                         </li>
                         <li id="linkedin-media">
-                            <a href="https://www.instagram.com/devpolarys/" target="_blank"><img src="./img/linkedin-grey.svg" alt="Linkedin"></a>
+                            <a href="https://www.linkedin.com/in/lauanamorim/" target="_blank"><img src="./img/linkedin-grey.svg" alt="Linkedin"></a>
                         </li>
                         <li id="github-media">
-                            <a href="https://www.instagram.com/devpolarys/" target="_blank"><img src="./img/githublogo.svg" alt="Github"></a>
+                            <a href="https://github.com/LauanAmorim" target="_blank"><img src="./img/githublogo.svg" alt="Github"></a>
                         </li>
                     </ul>
                 </div>
@@ -342,10 +347,10 @@ checkbox.addEventListener("change", ocultarOuMostrar);
                             <a href="https://www.instagram.com/lucasd_raab/" target="_blank"><img src="./img/instagram-grey.svg" alt="Instagram"></a>
                         </li>
                         <li id="linkedin-media">
-                            <a href="https://www.instagram.com/devpolarys/" target="_blank"><img src="./img/linkedin-grey.svg" alt="Linkedin"></a>
+                            <a href="https://www.linkedin.com/in/lucas-rabaquim/" target="_blank"><img src="./img/linkedin-grey.svg" alt="Linkedin"></a>
                         </li>
                         <li id="github-media">
-                            <a href="https://www.instagram.com/devpolarys/" target="_blank"><img src="./img/githublogo.svg" alt="Github"></a>
+                            <a href="https://github.com/LucasRabaquim" target="_blank"><img src="./img/githublogo.svg" alt="Github"></a>
                         </li>
                     </ul>
                 </div>
@@ -368,7 +373,7 @@ checkbox.addEventListener("change", ocultarOuMostrar);
                             <a href="https://www.instagram.com/devpolarys/" target="_blank"><img src="./img/linkedin-grey.svg" alt="Linkedin"></a>
                         </li>
                         <li id="github-media">
-                            <a href="https://www.instagram.com/devpolarys/" target="_blank"><img src="./img/githublogo.svg" alt="Github"></a>
+                            <a href="https://github.com/FelipeSene" target="_blank"><img src="./img/githublogo.svg" alt="Github"></a>
                         </li>
                     </ul>
                 </div>
@@ -388,7 +393,7 @@ checkbox.addEventListener("change", ocultarOuMostrar);
                             <a href="https://www.instagram.com/macedo.lg/" target="_blank"><img src="./img/instagram-grey.svg" alt="Instagram"></a>
                         </li>
                         <li id="linkedin-media">
-                            <a href="https://www.instagram.com/devpolarys/" target="_blank"><img src="./img/linkedin-grey.svg" alt="Linkedin"></a>
+                            <a href="https://www.linkedin.com/in/macedolg/" target="_blank"><img src="./img/linkedin-grey.svg" alt="Linkedin"></a>
                         </li>
                         <li id="github-media">
                             <a href="https://www.instagram.com/devpolarys/" target="_blank"><img src="./img/githublogo.svg" alt="Github"></a>
@@ -422,10 +427,6 @@ checkbox.addEventListener("change", ocultarOuMostrar);
             </li>  
           </ul>
         </div>
-        <div id="seta" data-glide-el="controls">
-            <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><i class="fa fa-arrow-left"></i></button>
-            <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><i class="fa fa-arrow-right"></i></button>
-          </div>
       </div>
       <script src="glide.min.js"></script>
       <script>
@@ -435,7 +436,7 @@ checkbox.addEventListener("change", ocultarOuMostrar);
             startAt: 0,
             animationDuration: 500,
             gap: 40,
-            autoplay: 2400,
+            autoplay: 1400,
             hoverpause: true,
             bound: true,
             breakpoints: {

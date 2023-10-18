@@ -376,6 +376,7 @@ section#services{
         align-items: center;
   
       }
+
       .card{
         padding-top: 5vh;
         min-height: 60vh;
@@ -598,7 +599,12 @@ section#services{
         padding-top: 5vh;
         border-radius: 0;
       }
-      
+      .faq-content {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 40vh;
+      }
       #main-text-contact h1{
         font-size: 1.5rem;
       }
