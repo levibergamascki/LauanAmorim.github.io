@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="./css/style.css">
     <link rel="stylesheet" href="glide.core.min.css">
     <link rel="stylesheet" href="glide.theme.min.css">
+
     <link
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
@@ -24,8 +25,8 @@
         <li>
             <a href="#home"><img src="img/logopolarys.svg" alt="POLARYS"></a>
         </li></ul>
-        <input id="menu-hamburguer" type="checkbox" />
-
+        <input id="menu-hamburguer" type="checkbox"/>
+        
         <label for="menu-hamburguer">
           <div class="menu">
             <span class="hamburguer"></span>
@@ -46,7 +47,22 @@
             </li>
         </ul>
     </nav>
+    <script>
+     function ocultarOuMostrar() {
+    var element = document.getElementById("pages");
+    var checkbox = document.getElementById("menu-hamburguer");
+    if (checkbox.checked) {
+        element.classList.add("hide");
+        document.body.style.overflow="hidden";
+    } else {
+        element.classList.add("hide");
+        document.body.style.overflow="auto";
+    }
+}
 
+var checkbox = document.getElementById("menu-hamburguer");
+checkbox.addEventListener("change", ocultarOuMostrar);
+    </script>
     <div class="maincontent">
         <div id="maintext">
             <h1>ENERGIZANDO OS SEUS SONHOS
@@ -173,7 +189,7 @@
             </li>
           </ul>
         </div>
-        <div data-glide-el="controls">
+        <div id="seta" data-glide-el="controls">
             <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><i class="fa fa-arrow-left"></i></button>
             <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><i class="fa fa-arrow-right"></i></button>
           </div>
@@ -186,6 +202,8 @@
             startAt: 0,
             animationDuration: 500,
             gap: 40,
+            autoplay: 2400,
+            hoverpause: false,
             bound: true,
             breakpoints: {
                 1200:{
@@ -403,7 +421,7 @@
             </li>  
           </ul>
         </div>
-        <div data-glide-el="controls">
+        <div id="seta" data-glide-el="controls">
             <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><i class="fa fa-arrow-left"></i></button>
             <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><i class="fa fa-arrow-right"></i></button>
           </div>
@@ -416,6 +434,8 @@
             startAt: 0,
             animationDuration: 500,
             gap: 40,
+            autoplay: 2400,
+            hoverpause: true,
             bound: true,
             breakpoints: {
                 1200:{

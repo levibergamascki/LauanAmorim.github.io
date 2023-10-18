@@ -67,7 +67,6 @@ section#services{
     text-decoration: none;
     border-radius: 10px;
     font-weight: 600;
-
 }
 
 #mainmenu #pages{
@@ -158,14 +157,12 @@ section#services{
    
 
    section#about{
-    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
    }
 
     #about-art{
-        position: relative;
         left: -3rem;
         float: left;
         width: 461px;
@@ -297,7 +294,6 @@ section#services{
       .panel-title {
         font-size: 24px;
         width: 100%;
-        position: relative;
         margin: 0;
         padding: 10px 10px 0 48px;
         display: block;
@@ -317,7 +313,6 @@ section#services{
         height: 0;
         overflow: hidden;
         z-index: -1;
-        position: relative;
         opacity: 0;
         -webkit-transition: .4s ease;
         -moz-transition: .4s ease;
@@ -682,11 +677,11 @@ section#services{
   input:checked ~ label .menu {
     box-shadow: 0 0 0 130vw #fff, 0 0 0 130vh #fff;
   }
-  
-  input:checked ~ ul {
-    opacity: 1;
+
+
+  #mainmenu ul li a{
+    color: black;
   }
-  
 
   #pages {
     position: absolute;
@@ -694,10 +689,15 @@ section#services{
     left: 50%;
     transform: translate(-50%, -50%);
     list-style: none;
-    font-size: 45px;
     opacity: 0;
-    transition: 0.25s 0.1s cubic-bezier(0, 1.07, 0, 1.02);
-    z-index: 2;
+    font-size: 45px;
+    transition: 0.25s 0.1s ease-out;
+    z-index: 9999;
+  }
+  input:checked ~ #pages{
+    position: fixed;
+    opacity: 1;
+    z-index: 9999;
   }
   
   #pages a {
@@ -706,8 +706,11 @@ section#services{
     margin-bottom: 1em;
     text-decoration: none;
   }
-  input {
+  input #menu-hamburguer{
     display: none;
+  }
+  nav#mainmenu{
+    z-index: 9999;
   }
   
   input:checked ~ label .hamburguer {
@@ -801,16 +804,18 @@ section#services{
       box-shadow: 0 0 0.3em  var(--red), 0 0 0 currentColor;
      
     }
-
-     
-      #glide-contact{
-        padding-top: 10vh;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-  
+    #seta{
+      display: none;
+    }
+      .glide{
+        padding: 5em 0em 10em 1em;
+      
       }
+        #glide-contact{
+        padding: 5em 0em 10em 1em;
+      
+        }
+    
       .card{
         
         min-height: 50vh;
