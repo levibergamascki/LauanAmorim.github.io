@@ -9,7 +9,9 @@
     nossa missão, nossa visão, nossos valores, nossos rostos e nossa localização. Energizando seus sonhos em realidade">
     <title>DevPolarys | Energizando seus sonhos em realidade</title>
     <link rel="stylesheet" type="text/css" href="./css/style.css">
-    <script src="../script/slide.js"></script>
+    <link rel="stylesheet" href="glide.core.min.css">
+    <link rel="stylesheet" href="glide.theme.min.css">
+
     <link
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
@@ -23,6 +25,13 @@
         <li>
             <a href="#home"><img src="img/logopolarys.svg" alt="POLARYS"></a>
         </li></ul>
+        <input id="menu-hamburguer" type="checkbox"/>
+        
+        <label for="menu-hamburguer">
+          <div class="menu">
+            <span class="hamburguer"></span>
+          </div>
+        </label>
         <ul id="pages">
             <li>
                 <a href="#home">INÍCIO</a>
@@ -38,7 +47,22 @@
             </li>
         </ul>
     </nav>
+    <script>
+     function ocultarOuMostrar() {
+    var element = document.getElementById("pages");
+    var checkbox = document.getElementById("menu-hamburguer");
+    if (checkbox.checked) {
+        element.classList.add("hide");
+        document.body.style.overflow="hidden";
+    } else {
+        element.classList.add("hide");
+        document.body.style.overflow="auto";
+    }
+}
 
+var checkbox = document.getElementById("menu-hamburguer");
+checkbox.addEventListener("change", ocultarOuMostrar);
+    </script>
     <div class="maincontent">
         <div id="maintext">
             <h1>ENERGIZANDO OS SEUS SONHOS
@@ -46,8 +70,7 @@
         </div>
 
         <div id="subtext">
-            <h2>Lorem ipsum dolor sit amet consectetur.
-                 Porttitor eu <br> ipsum eu purus ut arcu aliquet volutpat id.</h2>
+            <h2>Conheça mais sobre quem somos,<br> nosso projetos e como nos contatar</h2>
         </div>
 
         <div id="btn-exp">
@@ -65,17 +88,16 @@
 
     <div id="about-father">
 
-        <div id="about-tittle">
-        <h1>SOBRE</h1>
+        <div id="about-title">
+            <h1>SOBRE</h1>
         </div>
 
         <div class="about-text">
-            <p>Lorem ipsum dolor sit amet consectetur.</p>
-            <p>Quam sed dictumst viverra praesent orci adipiscing.</p>
-            <p> Dui enim lorem viverra commodo imperdiet eget netus.</p>
-            <p> Lorem ipsum dolor sit amet consectetur.</p>
-            <p>  Quam sed dictumst viverra praesent orci adipiscing.</p>
-            <p> Dui enim lorem viverra commodo> imperdiet eget netus.</p>
+            <p>Lorem ipsum dolor sit amet consectetur.
+            Quam sed dictumst viverra praesent orci adipiscing.
+             Dui enim lorem viverra commodo imperdiet eget netus.
+            Lorem ipsum dolor sit amet consectetur.
+             Quam sed dictumst viverra praesent orci adipiscing. Dui enim lorem viverra commodo imperdiet eget netus.</p>
             </div>
 
              <div class="about-btn">
@@ -89,37 +111,115 @@
 </section>
 
 <section id="services">
-<div class="main-services">
-    <div id="services-text">
-       <img src="img/maintext-service.svg" alt="Descubra o futuro da tecnologia aqui">
-    </div>
-    
-    <!-- <div id="languages">
-        <script>showSlides()</script>
-        <div class="slideshow-container">
-
-
-            <div class="mySlides fade">
-              <img src="img/logoc#.svg">
-              <img src="img/logojava.svg">
-              <img src="img/logoreact.svg">
-              <div class="text">C#</div>
+    <div class="main-services">
+        <div id="services-text">
+            <h1>DESCUBRA O FUTURO DA <h1 class="fill">TECNOLOGIA DE SOFTWARE AQUI</h1></h1>
+      
+        </div>
+    <div class="glide">
+        <div class="glide__track" data-glide-el="track">
+          <ul class="glide__slides">
+            <li class="glide__slide">
+            <div class="box">
+                <div class="img-area">
+                    <img src="./img/logojava.svg" alt="java">
+                </div>
+                    <div class="text-area">
+                <h2>JAVA</h2>
+                <h3>Desenvolvimento de aplicações para Android</h3>
             </div>
-          
-          
-            <div class="mySlides fade">
-              <img src="img/logoreact.svg">
-              <div class="text">Caption Three</div>
-            </div>
-          
-
-            <a class="prev" onclick="showSlides(-1)">&#10094;</a>
-            <a class="next" onclick="showSlides(1)">&#10095;</a>
+            
+        </li>
+            <li class="glide__slide">
+                <div class="box--2">
+                    <div class="img-area">
+                        <img src="./img/logojava.svg" alt="C Sharp">
+                    </div>
+                        <div class="text-area">
+                    <h2>C#</h2>
+                    <h3>Desenolvimento do back-end</h3>
+                </div>
+                    
+                
+                
+            </li>
+            <li class="glide__slide">
+                <div class="box">
+                    <div class="img-area">
+                        <img src="./img/logojava.svg" alt="Java">
+                    </div>
+                    <div class="text-area">
+                    <h2>REACT</h2>
+                    <h3>Desenvolvimento de páginas web</h3>
+                </div>
+                    
+                  
+            </li>
+            <li class="glide__slide">
+                <div class="box--2">
+                    <div class="img-area">
+                        <img src="./img/logojava.svg" alt="C Sharp">
+                    </div>
+                    <div class="text-area">
+                    <h2>ASP.NET</h2>
+                    <h3>Desenvolvimento web com .NET Framework</h3>
+                </div>
+                   
+            </li>
+            <li class="glide__slide">
+                <div class="box">
+                    <div class="img-area">
+                        <img src="./img/logojava.svg" alt="Lucas Rabaquim">
+                    </div>
+                    <div class="text-area">
+                    <h2>JAVASCRIPT</h2>
+                    <h3>Desenvolvimento Full-Stack</h3>
+                </div>
+                 
+            </li>        <li class="glide__slide">
+                <div class="box--2">
+                    <div class="img-area">
+                        <img src="./img/logojava.svg" alt="Lucas Rabaquim">
+                    </div>
+                        <div class="text-area">
+                    <h2>NODE</h2>
+                    <h3>Desenvolvimento Back-End</h3>
+                </div>
+                 
+            </li>
+          </ul>
+        </div>
+        <div id="seta" data-glide-el="controls">
+            <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><i class="fa fa-arrow-left"></i></button>
+            <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><i class="fa fa-arrow-right"></i></button>
           </div>
-          <br>
-          -->
+      </div>
+      <script src="glide.min.js"></script>
+      <script>
+        new Glide(".glide", {
+            type: 'slider',
+            perView: 3,
+            startAt: 0,
+            animationDuration: 500,
+            gap: 40,
+            autoplay: 2400,
+            hoverpause: false,
+            bound: true,
+            breakpoints: {
+                1200:{
+                    perView: 3
+                },
+                800:{
+                    perView: 1,
+                    gap: 10
+                }
+            }
 
-          <div class="faq-content">
+        }).mount();
+      </script>
+
+      
+        <div class="faq-content">
             <div class="faq-question faq--card">
               <input id="q1" type="checkbox" class="panel">
               <div class="plus">+</div>
@@ -138,23 +238,222 @@
               <input id="q3" type="checkbox" class="panel">
               <div class="plus">+</div>
               <label for="q3" class="panel-title">Valores</label>
-              <div class="panel-content"> 
-                   <ul> 
+                <div class="panel-content"> 
+                    <ul> 
                        <li> Primeiro no mercado, buscando sempre oferecer os melhores serviços aos nossos clientes </li>
-                        <li>Otimização em massa, sempre deixando nossas criações atualizadas </li>
                          <li>Liberdade de escolha para os nossos clientes em relação a suas aplicações</li>
-                        <li>Atitude para fazer, a sua hora é agora </li>
                          <li>Respeito a todos.</li>
-            </ul> 
-           </div>
+                    </ul> 
+                </div>
             </div>
-          </div>
-       
-</div>
-
-</section>
+        </div>
+    </div>
+    </section>
 <section id="contact">
 <div class="maincontact">
+    <div class="glide" id="glide-contact">
+        <div class="glide__track" data-glide-el="track">
+          <ul class="glide__slides">
+            <li class="glide__slide">
+            <div class="card">
+                <div class="img-face">
+                    <img class="face" src="./img/levi 1.svg" alt="Levi Bergamascki">
+                </div>
+                    <div class="text-area">
+                <h2>Levi Bergamascki</h2>
+                <h3>Desenvolvedor Front-End Web</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea delectus odio quaerat eveniet necessitatibus pariatur possimus voluptas ratione quidem magni.</p>
+                <ul class="social-media">
+                    <li id="instagram-media">
+                        <a href="https://www.instagram.com/levibergamascki/" target="_blank"><img src="./img/instagram-grey.svg" alt="Instagram"></a>
+                    </li>
+                    <li id="linkedin-media">
+                        <a href="https://www.instagram.com/devpolarys/" target="_blank"><img src="./img/linkedin-grey.svg" alt="Linkedin"></a>
+                    </li>
+                    <li id="github-media">
+                        <a href="https://www.instagram.com/devpolarys/" target="_blank"><img src="./img/githublogo.svg" alt="Github"></a>
+                    </li>
+                </ul>
+            </div>
+            
+            </div>
+        </li>
+            <li class="glide__slide">
+                <div class="card">
+                    <div class="img-face">
+                        <img class="face" src="./img/luizgustavo.jpeg" alt="Luiz Gustavo">
+                    </div>
+                        <div class="text-area">
+                    <h2>Luiz Gustavo</h2>
+                    <h3>Desenvolvedor Front-End Java</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea delectus odio quaerat eveniet necessitatibus pariatur possimus voluptas ratione quidem magni.</p>
+                    <ul class="social-media">
+                        <li id="instagram-media">
+                            <a href="https://www.instagram.com/gustavo_db1/" target="_blank"><img src="./img/instagram-grey.svg" alt="Instagram"></a>
+                        </li>
+                        <li id="linkedin-media">
+                            <a href="https://www.instagram.com/devpolarys/" target="_blank"><img src="./img/linkedin-grey.svg" alt="Linkedin"></a>
+                        </li>
+                        <li id="github-media">
+                            <a href="https://www.instagram.com/devpolarys/" target="_blank"><img src="./img/githublogo.svg" alt="Github"></a>
+                        </li>
+                    </ul>
+                </div>
+                    
+                
+                </div>
+            </li>
+            <li class="glide__slide">
+                <div class="card">
+                    <div class="img-face">
+                        <img class="face" src="./img/lauan.jfif" alt="Lauan Amorim">
+                    </div>
+                    <div class="text-area">
+                    <h2>Lauan Amorim</h2>
+                    <h3>Líder do projeto</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea delectus odio quaerat eveniet necessitatibus pariatur possimus voluptas ratione quidem magni.</p>
+                    <ul class="social-media">
+                        <li id="instagram-media">
+                            <a href="https://www.instagram.com/l4uzin/" target="_blank"><img src="./img/instagram-grey.svg" alt="Instagram"></a>
+                        </li>
+                        <li id="linkedin-media">
+                            <a href="https://www.instagram.com/devpolarys/" target="_blank"><img src="./img/linkedin-grey.svg" alt="Linkedin"></a>
+                        </li>
+                        <li id="github-media">
+                            <a href="https://www.instagram.com/devpolarys/" target="_blank"><img src="./img/githublogo.svg" alt="Github"></a>
+                        </li>
+                    </ul>
+                </div>
+                    
+                  
+                </div>
+            </li>
+            <li class="glide__slide">
+                <div class="card">
+                    <div class="img-face">
+                        <img class="face" src="./img/lucasrabaquim2.png" alt="Lucas Rabaquim">
+                    </div>
+                    <div class="text-area">
+                    <h2>Lucas Rabaquim</h2>
+                    <h3>Desenvolvedor Back-End Java</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea delectus odio quaerat eveniet necessitatibus pariatur possimus voluptas ratione quidem magni.</p>
+                    <ul class="social-media">
+                        <li id="instagram-media">
+                            <a href="https://www.instagram.com/lucasd_raab/" target="_blank"><img src="./img/instagram-grey.svg" alt="Instagram"></a>
+                        </li>
+                        <li id="linkedin-media">
+                            <a href="https://www.instagram.com/devpolarys/" target="_blank"><img src="./img/linkedin-grey.svg" alt="Linkedin"></a>
+                        </li>
+                        <li id="github-media">
+                            <a href="https://www.instagram.com/devpolarys/" target="_blank"><img src="./img/githublogo.svg" alt="Github"></a>
+                        </li>
+                    </ul>
+                </div>
+                   
+            </li>
+            <li class="glide__slide">
+                <div class="card">
+                    <div class="img-face">
+                        <img class="face" src="./img/felipesene.svg" alt="Felipe Sene">
+                    </div>
+                    <div class="text-area">
+                    <h2>Felipe Sene</h2>
+                    <h3>Analista de Sistemas</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea delectus odio quaerat eveniet necessitatibus pariatur possimus voluptas ratione quidem magni.</p>
+                    <ul class="social-media">
+                        <li id="instagram-media">
+                            <a href="https://www.instagram.com/felpssene/" target="_blank"><img src="./img/instagram-grey.svg" alt="Instagram"></a>
+                        </li>
+                        <li id="linkedin-media">
+                            <a href="https://www.instagram.com/devpolarys/" target="_blank"><img src="./img/linkedin-grey.svg" alt="Linkedin"></a>
+                        </li>
+                        <li id="github-media">
+                            <a href="https://www.instagram.com/devpolarys/" target="_blank"><img src="./img/githublogo.svg" alt="Github"></a>
+                        </li>
+                    </ul>
+                </div>
+                 
+            </li>      
+              <li class="glide__slide">
+                <div class="card">
+                    <div class="img-face">
+                        <img class="face" src="./img/lucasgabriel.svg" alt="Lucas Gabriel">
+                    </div>
+                        <div class="text-area">
+                    <h2>Lucas Gabriel</h2>
+                    <h3>Desenvolvedor Front-End</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea delectus odio quaerat eveniet necessitatibus pariatur possimus voluptas ratione quidem magni.</p>
+                    <ul class="social-media">
+                        <li id="instagram-media">
+                            <a href="https://www.instagram.com/macedo.lg/" target="_blank"><img src="./img/instagram-grey.svg" alt="Instagram"></a>
+                        </li>
+                        <li id="linkedin-media">
+                            <a href="https://www.instagram.com/devpolarys/" target="_blank"><img src="./img/linkedin-grey.svg" alt="Linkedin"></a>
+                        </li>
+                        <li id="github-media">
+                            <a href="https://www.instagram.com/devpolarys/" target="_blank"><img src="./img/githublogo.svg" alt="Github"></a>
+                        </li>
+                    </ul>
+                </div>
+                 
+            </li>
+            <li class="glide__slide">
+                <div class="card">
+                    <div class="img-face">
+                        <img class="face" src="./img/jaime.svg" alt="Jaime Koji">
+                    </div>
+                    <div class="text-area">
+                    <h2>Jaime Koji</h2>
+                    <h3>Analista de Banco de Dados</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea delectus odio quaerat eveniet necessitatibus pariatur possimus voluptas ratione quidem magni.</p>
+                    <ul class="social-media">
+                        <li id="instagram-media">
+                            <a href="https://www.instagram.com/jaimeksp1009/ target="_blank"><img src="./img/instagram-grey.svg" alt="Instagram"></a>
+                        </li>
+                        <li id="linkedin-media">
+                            <a href="https://www.instagram.com/devpolarys/" target="_blank"><img src="./img/linkedin-grey.svg" alt="Linkedin"></a>
+                        </li>
+                        <li id="github-media">
+                            <a href="https://www.instagram.com/devpolarys/" target="_blank"><img src="./img/githublogo.svg" alt="Github"></a>
+                        </li>
+                    </ul>
+                </div>
+                 
+            </li>  
+          </ul>
+        </div>
+        <div id="seta" data-glide-el="controls">
+            <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><i class="fa fa-arrow-left"></i></button>
+            <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><i class="fa fa-arrow-right"></i></button>
+          </div>
+      </div>
+      <script src="glide.min.js"></script>
+      <script>
+        new Glide("#glide-contact", {
+            type: 'slider',
+            perView: 4,
+            startAt: 0,
+            animationDuration: 500,
+            gap: 40,
+            autoplay: 2400,
+            hoverpause: true,
+            bound: true,
+            breakpoints: {
+                1200:{
+                    perView: 3
+                },
+                800:{
+                    perView: 1,
+                    startAt: 0,
+                    gap: 10
+                }
+            }
+
+        }).mount();
+      </script>
+
+
+      <div class="forms-location">
  <div id="leftcontact">
      <div id="main-text-contact">
          <h1>Entre em contato</h1>
@@ -163,7 +462,7 @@
      
      <div id="forms">
 
-        <div class="a">
+        <div class="left-column">
             <input
               type="text"
               placeholder="Nome"
@@ -183,7 +482,7 @@
               autocomplete="off"
             />
         </div>
-        <div class="b">
+        <div class="right-column">
             <input
               type="text"
               placeholder="Mensagem"
@@ -198,10 +497,11 @@
       </div>
  </div>
  <div id="rightcontact">
-    <iframe
+    <iframe title="localização"
      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14632.28443558708!2d-46.745404087675055!3d-23.529944709727324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef8b965d5052f%3A0x99f05fb5906891af!2sVila%20Leopoldina%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2002675-031!5e0!3m2!1spt-BR!2sbr!4v1696451124840!5m2!1spt-BR!2sbr" 
      width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
  </div>   
+</div>
 </div>
 </section>
 
