@@ -16,7 +16,19 @@
     font-family: 'Poppins', sans-serif;
 
 }
-
+.language{
+    position: fixed;
+    right: 10px;
+    bottom: 0;
+    z-index: 5000;
+}
+.language img{
+  height: 100%;
+  width: 6vh;
+}
+.language img:hover{
+  animation: 1s waviy infinite;
+}
 a{
    text-decoration: none;	
 }
@@ -85,7 +97,7 @@ section#services{
       transform: translateY(0)
     }
     20% {
-      transform: translateY(-10px)
+      transform: translateY(-8px)
     }
   }
 
@@ -580,7 +592,12 @@ section#services{
         animation-delay: calc(.1s * var(--i))
     }
 
-  
+  #footer-text a{
+    color: #BCBCBC;
+  }
+  #footer-text a:hover{
+    text-decoration: underline;
+  }
 .list-footer{
     padding: 0px 1rem;
     display: flex;
